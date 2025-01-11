@@ -1,6 +1,6 @@
 .footer {
-	@include adaptiveValue("padding-top", 15, 5);
-	@include adaptiveValue("padding-bottom", 15, 5);
+	@include adaptiveValue("padding-top", 15, 10);
+	@include adaptiveValue("padding-bottom", 15, 10);
 	background-color: grey;
 	&__container {
 	}
@@ -11,6 +11,6 @@
 		align-items: center;
 		text-align: center;
 		color: #fff;
-		@include adaptiveValue("font-size", 26, 14);
+		@include adaptiveValue("font-size", 26, 18);
 	}
 }

@@ -61,7 +61,7 @@ function initSliders() {
 			observeParents: true,
 			slidesPerView: 1.1,
 			spaceBetween: 5,
-			autoHeight: true,
+			// autoHeight: true,
 			speed: 2000,
 			centeredSlides: true,
 			loop: true,
@@ -81,19 +81,27 @@ function initSliders() {
 					centeredSlides: true,
 				},
 				540: {
-					slidesPerView: 1.5,
+					slidesPerView: 1.8,
 					centeredSlides: true,
 				},
-				768: {
+				630: {
+					slidesPerView: 2.8,
+					centeredSlides: true,
+				},
+				769: {
 					slidesPerView: 3.3,
 					centeredSlides: true,
 				},
 				992: {
-					slidesPerView: 3.8,
+					slidesPerView: 3.6,
 					centeredSlides: true,
 				},
 				1024: {
 					slidesPerView: 4.3,
+					centeredSlides: true,
+				},
+				1200: {
+					slidesPerView: 4.8,
 					centeredSlides: true,
 				},
 				1200: {

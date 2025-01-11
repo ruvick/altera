@@ -13,11 +13,12 @@
 }
 // Заголовок спойлера
 .spollers__title {
+	font-weight: 500;
 	width: 100%;
 	cursor: default;
 	text-align: left;
-	border: rem(1) solid #eee;
-	padding: rem(10) rem(38) rem(10) rem(15);
+	border: rem(1) solid #cccaca;
+	padding: rem(15) rem(38) rem(15) rem(15);
 	border-radius: rem(5);
 	position: relative;
 	._spoller-init & {
@@ -30,7 +31,7 @@
 			top: 50%;
 			background-color: #000;
 			height: rem(2);
-			@include adaptiveValue("width", 15, 10);
+			@include adaptiveValue("width", 10, 8);
 			transition: transform 0.5s ease 0s;
 		}
 		&::before {
@@ -55,5 +56,6 @@
 	line-height: math.div(23, 16);
 	@include adaptiveValue("padding", 20, 10);
 	border-radius: rem(5);
-	border: rem(1) solid #eee;
+	border: rem(1) solid #cccaca;
+	border-top: none;
 }

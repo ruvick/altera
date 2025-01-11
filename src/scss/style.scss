@@ -147,6 +147,8 @@ body {
 //========================================================================================================================================================
 
 .page {
+	@include adaptiveValue("padding-top", 20, 10);
+	@include adaptiveValue("padding-bottom", 20, 10);
 	&__answer {
 		@include adaptiveValue("padding-top", 55, 15);
 		@include adaptiveValue("padding-bottom", 55, 25);

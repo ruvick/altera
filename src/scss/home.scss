@@ -1,16 +1,24 @@
 .header-page {
-
-	&__container {
-	}
-
 	&__title {
 		text-align: center;
 		h1 {
-			@include adaptiveValue("font-size", 36, 23);
+			@include adaptiveValue("font-size", 36, 30);
 			font-weight: 700;
 			line-height: math.div(36, 36);
 		}
 	}
+}
+//========================================================================================================================================================
+
+.swiper-pagination-bullet {
+	width: rem(13);
+	height: rem(13);
+	transition: all 0.3s ease 0s;
+	border: rem(1) solid grey;
+	cursor: pointer;
+}
+.swiper-pagination-bullet-active {
+	background-color: grey;
 }
 //========================================================================================================================================================
 
@@ -30,29 +38,37 @@
 
 	&__inner {
 		position: relative;
+		display: grid;
 	}
 
 	&__slider {
-		
-	}
-
-	&__wrapper {
+		position: relative;
+		width: 100%;
 	}
 
 	&__slide-ibg {
 		padding-bottom: 60%;
+		background-color: grey;
 		overflow: hidden;
-		@media (min-width:em(540)){
+		@media (min-width:em(541)){
 			padding-bottom: 45%;  
 		}
-		@media (min-width:em(768)){
-			padding-bottom: 30%;  
+		@media (min-width:em(630)){
+			padding-bottom: 23%;  
 		}
-		@media (min-width:em(992)){
+		@media (min-width:em(769)){
 			padding-bottom: 20%;  
 		}
-		@media (min-width:em(1024)){
-			padding-bottom: 15%;  
+		@media (min-width:em(1025)){
+			padding-bottom: 16%;  
+		}
+		img {
+			transition: all 0.6s ease 0s;
+		}
+		@media (any-hover: hover){
+			 &:hover { 
+				img {transform: scale(1.05); } 
+			} 
 		}
 	}
 	&__pagination {
@@ -102,48 +118,25 @@
 		}
 	}
 }
-
-.swiper-pagination {
-}
-.swiper-pagination-bullet {
-	width: rem(13);
-	height: rem(13);
-	border: rem(1) solid grey;
-	transition: all 0.3s ease 0s;
-	cursor: pointer;
-}
-.swiper-pagination-bullet-active {
-	background-color: grey;
-}
 //========================================================================================================================================================
 
 .accordeon {
-
-	&__container {
-	}
-
+	background-color: #fbfbfb;
 	&__title {
 		&:not(:last-child){
 			@include adaptiveValue("margin-bottom", 25, 15);
 		}
 	}
-
-	&__spollers {
-	}
 }
 //========================================================================================================================================================
 
 .answer {
-
-	&__container {
-	}
-
 	&__title {
-		@include adaptiveValue("margin-bottom", 25, 15);
+		@include adaptiveValue("margin-bottom", 25, 20);
 	}
 
 	&__subtitle {
-		@include adaptiveValue("font-size", 23, 20);
+		font-size: rem(23);
 		font-weight: 700;
 		&:not(:last-child){
 			@include adaptiveValue("margin-bottom", 25, 20);
@@ -157,7 +150,7 @@
 	}
 
 	&__item {
-		font-size: rem(16);
+		@include adaptiveValue("font-size", 16, 14);
 		line-height: math.div(20, 16);
 		&:not(:last-child){
 			margin-bottom: rem(10);
