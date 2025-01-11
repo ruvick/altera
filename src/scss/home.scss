@@ -44,6 +44,9 @@
 		@media (min-width:em(992)){
 			padding-bottom: 20%;  
 		}
+		@media (min-width:em(1024)){
+			padding-bottom: 15%;  
+		}
 	}
 	&__pagination {
 		display: flex;
@@ -60,19 +63,32 @@
 		cursor: pointer;
 		width: rem(30);
 		height: rem(30);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		background-color: #808080d6; 
+		transition: all 0.3s ease 0s;
+		svg {
+			width: rem(14);
+			height: rem(14);
+		}
 		&.swiper-button-prev {
 			left: rem(-35);
-			background-color: grey;
 			@media (max-width: em(1520)){
 				left: rem(0);  
 			}
 		}
 		&.swiper-button-next {
 			right: rem(-35);
-			background-color: grey;
 			@media (max-width: em(1520)){
 				right: rem(0);  
 			}
+		}
+		@media (any-hover: hover){
+			 &:hover { 
+			 background-color: grey; 
+			} 
 		}
 		@media (max-width: em(991)){
 			  display: none;
@@ -86,6 +102,7 @@
 	width: rem(13);
 	height: rem(13);
 	border: rem(1) solid grey;
+	transition: all 0.3s ease 0s;
 	cursor: pointer;
 }
 .swiper-pagination-bullet-active {

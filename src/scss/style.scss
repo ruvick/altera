@@ -149,8 +149,8 @@ body {
 .page {
 
 	&__header {
-		@include adaptiveValue("padding-top", 55, 25);
-		@include adaptiveValue("padding-bottom", 55, 25);
+		@include adaptiveValue("padding-top", 55, 10);
+		@include adaptiveValue("padding-bottom", 25, 10);
 	}
 	&__slider {
 		@include adaptiveValue("padding-top", 55, 15);
