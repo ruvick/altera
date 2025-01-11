@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250111173142">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="header__container _container">
+					<div class="header__row">Шапка</div>
+				</div>
+			</div>
+		</header>
+		<main class="page page_home">
+
+			<section class="page__header header-page">
+				<div class="header-page__container">
+
+					<div class="header-page__title">
+						<h1>Тестовое задание</h1>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="page__answer answer">
+				<div class="answer__container">
+
+					<div class="answer__title title">Первый блок тесового задания</div>
+
+					<div class="answer__subtitle">Вопросы:</div>
+
+					<ul class="answer__list">
+						<li class="answer__item">Его необходимо поправить таким образом, чтобы на мобильных блок с инпутом расположился над блоком с итоговой суммой</li>
+						<li class="answer__item">Какие рекомендации вы бы дали?</li>
+					</ul>
+
+					<div class="answer__subtitle">Ответ</div>
+
+					<div class="answer__text">
+						<p>
+							Элементу form который находится внутри блока с классом .basket-wrapper указываем:
+							display: flex; flex-direction: column;
+							и тогда блок с инпутом расположился над блоком с итоговой суммой.
+						</p>
+						<p>
+							Так же я бы прописал для элемнта с классом .sum который находится в блоке .basket-wrapper: width: 100%;
+						</p>
+						<p>
+							Все это в медиазапросе от 576px и ниже.
+						</p>
+					</div>
+
+					<div class="answer__images">
+						<div class="answer__img">
+							<picture><source srcset="img/answer/01.webp" type="image/webp"><img src="img/answer/01.jpg?_v=1736605902278" loading="lazy" alt="Картинка"></picture>
+						</div>
+
+						<div class="answer__img">
+							<picture><source srcset="img/answer/02.webp" type="image/webp"><img src="img/answer/02.jpg?_v=1736605902278" loading="lazy" alt="Картинка"></picture>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="page__slider slider-page">
+				<div class="slider-page__container">
+
+					<div class="slider-page__title title">Слайдер</div>
+
+					<div class="slider-page__main-wrapper">
+						<div class="slider-page__inner">
+							<div class="slider-page__slider swiper">
+								<div class="slider-page__wrapper swiper-wrapper">
+
+									<div class="slider-page__slide-ibg swiper-slide">
+										<picture><source srcset="img/slider/01.webp" type="image/webp"><img src="img/slider/01.jpg?_v=1736605902278" loading="lazy" alt="Картинка"></picture>
+									</div>
+
+									<div class="slider-page__slide-ibg swiper-slide">
+										<picture><source srcset="img/slider/01.webp" type="image/webp"><img src="img/slider/01.jpg?_v=1736605902278" loading="lazy" alt="Картинка"></picture>
+									</div>
+
+									<div class="slider-page__slide-ibg swiper-slide">
+										<picture><source srcset="img/slider/01.webp" type="image/webp"><img src="img/slider/01.jpg?_v=1736605902278" loading="lazy" alt="Картинка"></picture>
+									</div>
+
+									<div class="slider-page__slide-ibg swiper-slide">
+										<picture><source srcset="img/slider/01.webp" type="image/webp"><img src="img/slider/01.jpg?_v=1736605902278" loading="lazy" alt="Картинка"></picture>
+									</div>
+
+									<div class="slider-page__slide-ibg swiper-slide">
+										<picture><source srcset="img/slider/01.webp" type="image/webp"><img src="img/slider/01.jpg?_v=1736605902278" loading="lazy" alt="Картинка"></picture>
+									</div>
+
+								</div>
+							</div>
+							<button type="button" class="slider-page__button swiper-button-prev">
+								<svg viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M11.0603 -9.27259e-08L13.1816 2.12132L4.2423 11.0607L13.1816 20L11.0603 22.1213L-0.000339992 11.0607L11.0603 -9.27259e-08Z" fill="#fff" />
+								</svg>
+							</button>
+							<button type="button" class="slider-page__button swiper-button-next">
+								<svg viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M2.12132 22.1211L-9.27259e-08 19.9998L8.93934 11.0604L-8.74228e-07 2.1211L2.12132 -0.00022516L13.182 11.0604L2.12132 22.1211Z" fill="#fff" />
+								</svg>
+							</button>
+						</div>
+						<div class="slider-page__pagination swiper-pagination"></div>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="page__accordeon accordeon">
+				<div class="accordeon__container">
+
+					<div class="accordeon__title title">Аккордеон</div>
+
+					<div data-spollers class="accordeon__spollers spollers">
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Что такое фронтенд-разработка?</button>
+							<div class="spollers__body">
+								Фронтенд-разработка — это создание клиентской части веб-приложений, которая отвечает за взаимодействие пользователя с сайтом. Она включает в себя использование HTML, CSS и JavaScript для создания интерфейсов, которые отображаются в браузере
+							</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Какие языки программирования используются во фронтенде?</button>
+							<div class="spollers__body">
+								Основные языки, используемые во фронтенд-разработке, это HTML (для разметки), CSS (для стилизации) и JavaScript (для добавления интерактивности). Также часто применяются библиотеки и фреймворки, такие как React, Vue.js и Angular.
+							</div>
+						</div>
+
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Что такое Responsive Web Design?</button>
+							<div class="spollers__body">
+								Responsive Web Design (адаптивный веб-дизайн) — это подход к веб-разработке, при котором сайт автоматически подстраивается под размеры экрана устройства, на котором он просматривается. Это достигается с помощью медиа-запросов в CSS и гибких сеток.
+							</div>
+						</div>
+
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Как улучшить производительность фронтенд-приложения?</button>
+							<div class="spollers__body">
+								Для улучшения производительности фронтенд-приложения можно использовать методы оптимизации, такие как минимизация и сжатие файлов CSS и JavaScript, использование кэширования, уменьшение количества запросов к серверу и оптимизация изображений.
+							</div>
+						</div>
+
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Что такое SPA (Single Page Application)?</button>
+							<div class="spollers__body">
+								SPA (одностраничное приложение) — это веб-приложение, которое загружает единую HTML-страницу и динамически обновляет содержимое по мере взаимодействия пользователя, без полной перезагрузки страницы. Это позволяет создать более плавный и быстрый пользовательский опыт.
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__row">Footer</div>
+			</div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20250111173142"></script>
+</body>
+
+</html>
