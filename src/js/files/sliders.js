@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Pagination, Loop } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -46,10 +46,10 @@ function initSliders() {
 
 	// Перечень слайдеров
 	if (document.querySelector('.swiper')) {
-		new Swiper('.swiper', {
+		new Swiper('.slider-page__slider', {
 			// Подключаем модули слайдера
 			// для конкретного случая
-			//modules: [Navigation, Pagination],
+			modules: [Navigation, Pagination],
 			/*
 			effect: 'fade',
 			autoplay: {
@@ -59,48 +59,49 @@ function initSliders() {
 			*/
 			observer: true,
 			observeParents: true,
-			slidesPerView: 1,
-			// slidesPerView: 'auto', // Чтобы слайдер сам не указывал ширину слайдам. Будем управлять в стилях.
-			spaceBetween: 0,
+			slidesPerView: 1.1,
+			spaceBetween: 5,
 			autoHeight: true,
-			speed: 800,
-			parallax: true,
-			//touchRatio: 0,
-			//simulateTouch: false,
-			//loop: true,
-			//preloadImages: false,
-			//lazy: true,
+			speed: 2000,
+			centeredSlides: true,
+			loop: true,
 			// Dotts
-			//pagination: {
-			//	el: '.slider-quality__pagging',
-			//	clickable: true,
-			//},
+			pagination: {
+				el: '.slider-page__pagination',
+				clickable: true,
+			},
 			// Arrows
 			navigation: {
-				nextEl: '.slider-rooms .slider-arrow_next',
-				prevEl: '.slider-rooms .slider-arrow_prev',
+				nextEl: '.slider-page__button.swiper-button-next',
+				prevEl: '.slider-page__button.swiper-button-prev',
 			},
-			/*
 			breakpoints: {
-				320: {
-					slidesPerView: 1,
-					spaceBetween: 0,
-					autoHeight: true,
+				414: {
+					slidesPerView: 1.3,
+					centeredSlides: true,
+				},
+				540: {
+					slidesPerView: 1.5,
+					centeredSlides: true,
 				},
 				768: {
-					slidesPerView: 2,
-					spaceBetween: 20,
+					slidesPerView: 3.3,
+					centeredSlides: true,
 				},
 				992: {
-					slidesPerView: 3,
-					spaceBetween: 20,
+					slidesPerView: 3.8,
+					centeredSlides: true,
 				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
+				1024: {
+					slidesPerView: 4.3,
+					centeredSlides: true,
+				},
+				1200: {
+					slidesPerView: 5,
+					spaceBetween: 10,
+					centeredSlides: false,
 				},
 			},
-			*/
 			on: {
 
 			}
