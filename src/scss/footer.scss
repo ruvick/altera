@@ -1,3 +1,16 @@
-//====================================================================================================
+.footer {
+	@include adaptiveValue("padding-top", 15, 5);
+	@include adaptiveValue("padding-bottom", 15, 5);
+	background-color: grey;
+	&__container {
+	}
 
-//====================================================================================================
+	&__row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color: #fff;
+		@include adaptiveValue("font-size", 26, 14);
+	}
+}
