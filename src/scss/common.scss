@@ -2,8 +2,20 @@
 
 .title	{
 	@include adaptiveValue("font-size", 26, 16);
+	font-weight: 700;
 	line-height: math.div(26, 26);
 	text-align: center;
+}
+
+// Стилизация скролла сайта ==============================================================================================================================
+::-webkit-scrollbar {
+	overflow-y: scroll;
+	width: 7px;
+	background-color: #f9f9fd;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: grey;
 }
 //========================================================================================================================================================
 
